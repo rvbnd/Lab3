@@ -1,0 +1,118 @@
+<div data-role="page" id="pages">
+
+     <div class="Header" data-role="header">
+          <h1>Know Your Kansas City</h1>
+     </div>
+    
+<div data-role="content">     
+          <p><a href="#GeoLocationPage" data-role="button">Check Your City Geo-location</a></p>
+          <p><a href="#GetDirectionsPage" data-role="button">Get Directions</a></p>
+          <p><a href="#WeatherPage" data-role="button">Check Your City Weather </a></p>
+        <p><a href="#CityTourPage" data-role="button">City Tour</a></p>
+        <p><a href="#PlacesofInterestPage" data-role="button">Places of Interest</a></p>
+    <p><a href="#page1" data-role="button"> Feedback</a></p>
+
+ </div>
+</div>
+
+<div data-role="page" id="GeoLocationPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Geo-location Page</h1>
+     </div>
+
+<div data-role="content">        
+        <script src="https://maps.googleapis.com/maps/api/js?            v=3.exp&sensor=true"></script>
+        <p>Geolocation Service</p>
+      <div id="map"></div>
+</div>
+</div>
+
+<div data-role="page" id="GetDirectionsPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Get Directions Page</h1>
+     </div>
+    <div data-role="content">
+        <p>Direction Service</p>
+        <button id="button">Show Direction</button>
+        <div id="map_canvas" style="height: 400px; width: 400px"></div>
+    </div>
+    </div>
+
+
+<div data-role="page" id="page1">
+      <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Feedback</h1>
+     </div>
+    
+<input type="text" placeholder="Write feedback to store" id="inputString" />
+<h2 onclick="clearStorage()">Clear Comment</h2>
+<h2 onclick="saveStatusLocally()">store</h2>
+<h2 onclick="readStatus()">Display Comment</h2>
+<div id="write"></div>
+ <p><a href="#ButtonEventPage" data-role="button">Next Page</a></p>
+<div id="write2"></div>
+</div>
+ 
+<div data-role="page" id="ButtonEventPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Page2</h1>
+     </div>
+    
+    <h2 onclick="clearStorage2()">clear storage</h2>
+<h2 onclick="readStatus2()">print</h2>
+<div id="write2"></div>
+</div>
+
+    
+<div data-role="page" id="WeatherPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1> City Weather Condition</h1>
+     </div>
+    <div data-role="content">
+        <p>Kansas City Weather Condition</p>
+        <button id="showweather">Show weather</button>
+        <div id="Jweather"></div>
+    </div>
+    <div id="tweet">
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+      
+<a class="tweet-link" href="https://twitter.com/intent/tweet?button_hashtag=
+Weather" class="twitter-hastag-button" data-lang="en">Tweet Weather</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</div>
+
+<div data-role="page" id="CityTourPage">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>City Tour Page</h1>
+     </div>  
+   
+    <a href="#CityTourPage" data-rel="CityTour"></a>
+<div data-role="CityTour" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="10,15" class="ui-content">
+<iframe src="http://player.vimeo.com/video/6470236?portrait=0" width="497" height="298" seamless></iframe>
+</div>
+</div>
+
+ <div data-role="page" id="PlacesofInterestPage">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Places Of Interest Page</h1>
+     </div>  
+     
+<a href="#PlacesofInterestPage" data-rel="POI"></a>
+<div data-role="POI" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false">
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="http://upload.wikimedia.org/wikipedia/commons/8/89/Kansas_City_Montage.jpg" alt="Crystal">
+</div>
+ </div>
+     

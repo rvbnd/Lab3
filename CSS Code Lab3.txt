@@ -1,0 +1,59 @@
+input.ui-input-text-placeholder, textarea.ui-input-text-placeholder {
+    width: 98% !important;
+}
+#map{
+    width: 200px;
+    height: 200px;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: #f00;
+}
+h2:active {
+    color:#555;
+}
+.weatherModule {
+    background:#f2f2f2;
+    height:150px;
+    width:250px;
+    border: 1px dashed #ccc;
+    padding: 1em;
+}
+.Header
+{
+    background: #04B431;
+}
+
+#Jweather {
+  width: 425px;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#Jweather h2 {
+  margin: 0 0 8px;
+  color: #000000;
+  font-size: 150px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#Jweather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#Jweather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#Jweather .currently {
+  margin: 0 20px;
+}
